@@ -1,0 +1,16 @@
+h2
+  Twitter Streaming Client
+div#messages
+
+script
+  $(document).ready(function(){
+
+    now.receiveMessage = function(message){
+      $("#messages").append("<div>" + message + "</div>");
+    }
+
+    now.ready(function(){
+      $("#messages").append("<div>" + "You are now Connected" + "</div>");
+    })
+
+  });
