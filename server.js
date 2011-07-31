@@ -45,8 +45,8 @@ var nowjs = require('now');
 var everyone = nowjs.initialize(app);
 
 var twit = new TwitterNode({
-  user: 'krish_arava', 
-  password: 'pantrycar'
+  user: 'username', 
+  password: 'password'
 });
 
 twit.track('#cricket');
