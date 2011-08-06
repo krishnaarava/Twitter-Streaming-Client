@@ -72,6 +72,7 @@ twit.addListener('tweet', function(tweet) {
 
 //** There seems to be error with Twitter-node and had to seperate function
 sendMsg = function(message){
- var remoteCall = everyone.now; 
- remoteCall.receiveMessage( message );
+ if (typeof everyone.now.receiveMessage == 'function'){ 
+  everyone.now.receiveMessage(message);
+ }
 };
